@@ -74,9 +74,13 @@
     .my-button:hover {
       background-color: #f5f5f5;
     }
+
+    .my-button-clicked {
+      background-color: #2d7c4a;
+    }
   </style>
 
-  <title>Skeleton</title>
+  <title>Module Testing</title>
   <script src="js/nomodule.js"></script>
   <script type="module" src="js/module1.js"></script>
   <script type="module" src="js/module2.js"></script>
@@ -90,19 +94,19 @@
   <div class="my-container">
     <div class="my-module">
       <h2>No Module</h2>
-      <div id="module1" class="my-button" onclick="nomodule('has been clicked')">Click</div>
+      <div id="nomodule" class="my-button" onclick="nomodule(this, 'has been clicked')">Click</div>
     </div>
     <div class="my-module">
       <h2>Module 1</h2>
-      <div id="module1" class="my-button" onclick="module1('has been clicked')">Click</div>
+      <div id="module1" class="my-button">Click</div>
     </div>
     <div class="my-module">
       <h2>Module 2</h2>
-      <div id="module2" class="my-button" onclick="module2('has been clicked')">Click</div>
+      <div id="module2" class="my-button">Click</div>
     </div>
   </div>
 
-  <footer class="footer">
+  <footer class=" footer">
     <div>
       <p>Chris Guest 2023©</p>
       <p id="buildnumber">commitid:{{ commitsha }}</p>
