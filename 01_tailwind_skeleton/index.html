@@ -6,56 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <style type="text/css">
-    * {
-      margin: 0;
-      padding: 0;
-    }
-
-    html,
-    body {
-      min-height: 100%;
-      overflow: hidden;
-      background: #3f4c6b;
-      background: linear-gradient(to bottom, #303038 0%, #303838 50%, #101818 50, #101018 100%);
-      font-family: 'Rubik Mono One', sans-serif;
-    }
-
-    h1 {
-      font-family: 'Rubik Mono One', sans-serif;
-      font-size: 3rem;
-      font-weight: 800;
-      line-height: 1.2;
-      color: #000000;
-      text-align: center;
-    }
-
-    .header {
-      position: absolute;
-      font-family: 'Rubik Mono One', sans-serif;
-      top: 0;
-      width: 100%;
-      /* Set the fixed height of the footer here */
-      height: 60px;
-      line-height: 60px;
-      /* Vertically center the text there */
-      background-color: #f5f5f5;
-      opacity: 0.3;
-    }
-
-    .footer {
-      position: absolute;
-      font-family: 'Rubik Mono One', sans-serif;
-      bottom: 0;
-      width: 100%;
-      /* Set the fixed height of the footer here */
-      height: 60px;
-      line-height: 60px;
-      /* Vertically center the text there */
-      background-color: #f5f5f5;
-      opacity: 0.3;
-    }
-  </style>
+  <link href="dist/styles.css" rel="stylesheet">
 
   <title>Skeleton</title>
 
@@ -92,19 +43,28 @@
 </head>
 
 <body>
-  <header class="header">
-    <div>
-      <h1>Browser Skeleton</h1>
-    </div>
-  </header>
+  <div class="flex flex-col">
+    <header class="flex">
+      <div>
+        <h1 class="text-3xl font-bold underline">Browser Skeleton</h1>
+      </div>
+    </header>
+    <div class="flex">
 
-
-  <footer class="footer">
-    <div>
-      <p>Chris Guest 2023©</p>
-      <p id="buildnumber">commitid:{{ commitsha }}</p>
+      <div class="flex flex-row ">
+        <div>01</div>
+        <div>02</div>
+        <div>03</div>
+      </div>
     </div>
-  </footer>
+
+    <footer class="flex">
+      <div>
+        <p>Chris Guest 2023©</p>
+        <p id="buildnumber">commitid:{{ commitsha }}</p>
+      </div>
+    </footer>
+  </div>
 </body>
 
 </html>
