@@ -14,6 +14,11 @@ code --install-extension ritwickdey.LiveServer
 A simple skeleton to help bootstrap examples.  
 Steps [README.md](./01_skeleton/README.md)  
 
+## 01 - Tailwind Skeleton
+
+A skeleton usng tailwind with raw html.  
+Steps [README.md](./01_tailwind_skeleton/README.md)  
+
 ## 02 - Modules
 
 A simple test of modules.  
