@@ -6,56 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <style type="text/css">
-    * {
-      margin: 0;
-      padding: 0;
-    }
-
-    html,
-    body {
-      min-height: 100%;
-      overflow: hidden;
-      background: #3f4c6b;
-      background: linear-gradient(to bottom, #303038 0%, #303838 50%, #101818 50, #101018 100%);
-      font-family: 'Rubik Mono One', sans-serif;
-    }
-
-    h1 {
-      font-family: 'Rubik Mono One', sans-serif;
-      font-size: 3rem;
-      font-weight: 800;
-      line-height: 1.2;
-      color: #000000;
-      text-align: center;
-    }
-
-    .header {
-      position: absolute;
-      font-family: 'Rubik Mono One', sans-serif;
-      top: 0;
-      width: 100%;
-      /* Set the fixed height of the footer here */
-      height: 60px;
-      line-height: 60px;
-      /* Vertically center the text there */
-      background-color: #f5f5f5;
-      opacity: 0.3;
-    }
-
-    .footer {
-      position: absolute;
-      font-family: 'Rubik Mono One', sans-serif;
-      bottom: 0;
-      width: 100%;
-      /* Set the fixed height of the footer here */
-      height: 60px;
-      line-height: 60px;
-      /* Vertically center the text there */
-      background-color: #f5f5f5;
-      opacity: 0.3;
-    }
-  </style>
+  <link href="dist/styles.css" rel="stylesheet">
 
   <title>Skeleton</title>
 
@@ -91,20 +42,33 @@
   <meta name="theme-color" content="#FFFFFF">
 </head>
 
-<body>
-  <header class="header">
-    <div>
-      <h1>Browser Skeleton</h1>
-    </div>
-  </header>
+<body class="bg-yellow-200 overflow-auto">
+  <div class="flex flex-col">
+    <header class="flex debug-border opacity-50 bg-slate-600 px-2 py-4">
+      <div class="w-[100%]">
+        <h1 class="text-3xl font-bold uppercase text-gray-950 text-center">Tailwind Browser Skeleton</h1>
+      </div>
+    </header>
 
-
-  <footer class="footer">
-    <div>
-      <p>Chris Guest 2023©</p>
-      <p id="buildnumber">commitid:{{ commitsha }}</p>
+    <div class="flex flex-grow">
+      <div class="flex flex-row flex-grow h-[90vh]">
+        <div class="w-1/12 debug-border opacity-50 bg-red-200">01</div>
+        <div class="w-10/12 debug-border opacity-50 bg-red-300">02</div>
+        <div class="w-1/12 debug-border opacity-50 bg-red-400">03</div>
+      </div>
     </div>
-  </footer>
+
+    <footer class="flex debug-border opacity-50 bg-slate-600 px-2 py-4">
+      <div class="flex flex-row flex-grow">
+        <div class="debug-border w-[50vw]">
+          <h4 class="font-bold">Chris Guest 2023©</h4>
+        </div>
+        <div class="debug-border w-[50vw]" id="buildnumber">
+          <h4 class="font-bold text-right">commitid:{{ commitsha }}</h4>
+        </div>
+      </div>
+    </footer>
+  </div>
 </body>
 
 </html>
