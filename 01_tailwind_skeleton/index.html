@@ -42,26 +42,30 @@
   <meta name="theme-color" content="#FFFFFF">
 </head>
 
-<body>
+<body class="bg-yellow-200 overflow-auto">
   <div class="flex flex-col">
-    <header class="flex">
-      <div>
-        <h1 class="text-3xl font-bold underline">Browser Skeleton</h1>
+    <header class="flex debug-border opacity-50 bg-slate-600 px-2 py-4">
+      <div class="w-[100%]">
+        <h1 class="text-3xl font-bold uppercase text-gray-950 text-center">Tailwind Browser Skeleton</h1>
       </div>
     </header>
-    <div class="flex">
 
-      <div class="flex flex-row ">
-        <div>01</div>
-        <div>02</div>
-        <div>03</div>
+    <div class="flex flex-grow">
+      <div class="flex flex-row flex-grow h-[90vh]">
+        <div class="w-1/12 debug-border opacity-50 bg-red-200">01</div>
+        <div class="w-10/12 debug-border opacity-50 bg-red-300">02</div>
+        <div class="w-1/12 debug-border opacity-50 bg-red-400">03</div>
       </div>
     </div>
 
-    <footer class="flex">
-      <div>
-        <p>Chris Guest 2023©</p>
-        <p id="buildnumber">commitid:{{ commitsha }}</p>
+    <footer class="flex debug-border opacity-50 bg-slate-600 px-2 py-4">
+      <div class="flex flex-row flex-grow">
+        <div class="debug-border w-[50vw]">
+          <h4 class="font-bold">Chris Guest 2023©</h4>
+        </div>
+        <div class="debug-border w-[50vw]" id="buildnumber">
+          <h4 class="font-bold text-right">commitid:{{ commitsha }}</h4>
+        </div>
       </div>
     </footer>
   </div>
